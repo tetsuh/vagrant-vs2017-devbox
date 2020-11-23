@@ -8,12 +8,12 @@ Vagrant.configure("2") do |config|
     config.winrm.username = "vagrant"
     config.winrm.password = "vagrant"
 
-    config.hostmanager.enabled = true
-    config.hostmanager.manage_host = true
-    config.hostmanager.manage_guest = true
-    config.hostmanager.aliases = %w(
-        # Add hostnames to map here
-    )
+    # config.hostmanager.enabled = true
+    # config.hostmanager.manage_host = true
+    # config.hostmanager.manage_guest = true
+    # config.hostmanager.aliases = %w(
+    #     # Add hostnames to map here
+    # )
 
     config.vm.provider "parallels" do |prl, override|
         prl.name = "Win10_VS2019"
