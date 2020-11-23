@@ -1,4 +1,9 @@
-# Windows 10 Pro Vagrant Development Box
+# Windows 10 Vagrant Development Box
+
+This is forked from https://github.com/Baune8D/vagrant-vs2017-devbox
+
+The original was for building VS2017 development environment,  
+This repository is intended to create latest VS2019 environment for use as Jenkins build agent.
 
 ## Setup
 
@@ -8,7 +13,9 @@
 **Vagrant-HostManager** Plugin: ```vagrant plugin install vagrant-hostmanager```
 
 ### Getting Started
-Providers for **VirtualBox**, **VMware** and **Parallels** are pre-configured.  
+Providers for **VirtualBox**, ~~VMware and Parallels~~ are pre-configured.  
+(note: Unlike the original repository, only the **VirtualBox** provider has been tested.)
+
 All hypervisors except VirtualBox will need a matching Vagrant provider plugin installed.  
 For Parallels: ```vagrant plugin install vagrant-parallels```
 
